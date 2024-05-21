@@ -32,18 +32,24 @@ function gg.make(iswhite, size)
   end
 end
 
-function gg.button(frame, size, func,name)
+function gg.button(frame, size, func, name)
   buttonCount = buttonCount + 1
   
   local button = Instance.new("TextButton")
   button.Parent = frame
   button.Size = UDim2.new(1, -20, 0, 50)  
-  button.Position = UDim2.new(0, 10, 0, (buttonCount - 1) * 60) 
+  button.Position = UDim2.new(0, 10, 0, (buttonCount - 1) * 60 + 10)
   button.Text = tostring(name)
+  button.TextColor3 = Color3.new(1, 1, 1)
+  button.Font = Enum.Font.SourceSansBold
   
   local uiCorner = Instance.new("UICorner")
   uiCorner.Parent = button
   uiCorner.CornerRadius = UDim.new(0, tonumber(size))
+  
+  button.BackgroundColor3 = Color3.fromRGB(165, 137, 102)
+  button.BorderColor3 = Color3.new(1, 1, 1)
+  button.BorderSizePixel = 1
   
   button.MouseButton1Click:Connect(func)
   
