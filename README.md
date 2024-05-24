@@ -18,7 +18,6 @@ gg.button(frame, 10, function()
     print("Third button clicked!")
 end, "Button 3")
 
-gg.button(frame, 10, function()
-    print("Fourth button clicked!")
-end, "Button 4")
+gg.createNavigationButtons(frame)
 ```
+press *back* to go back as for the first time it shows blank, Creating more buttons will result in more pages being created wich can be shown using 'next'; 'back', buttons
