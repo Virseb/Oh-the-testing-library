@@ -3,8 +3,8 @@
 ```lua
 local gg = loadstring(game:HttpGet("https://raw.githubusercontent.com/Virseb/Oh-the-testing-library/main/lib.lua"))()
 
-local frameInfo = gg.make(true, 10)
-local frame = frameInfo[2]
+local frameInfo = gg.make(true, 10) -- black,white ; corner radious
+local frame = frameInfo[2] 
 
 gg.button(frame, 10, function()
     print("Button clicked!")
