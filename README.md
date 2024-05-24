@@ -24,8 +24,7 @@ press *back* to go back as for the first time it shows blank, Creating more butt
 
 # The fix.. using this code below can costumise the code even more
 
-```lua
-gg.currentPage = 1 gg.updateButtonsVisibility(frame)
+```
 ```
 
 It helps so that when you execute it the first page isnt blank
