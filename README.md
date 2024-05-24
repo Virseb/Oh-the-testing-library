@@ -1,4 +1,4 @@
-# A usless library for testing
+# A simple library for testing
 
 ```lua
 local gg = loadstring(game:HttpGet("https://raw.githubusercontent.com/Virseb/Oh-the-testing-library/main/lib.lua"))()
