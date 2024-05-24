@@ -117,4 +117,8 @@ function gg.updateButtonsVisibility(frame)
     end
 end
 
+function gg.setPage(pageNumber)
+    currentPage = pageNumber
+end
+
 return gg
